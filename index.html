@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dinda Alexa Nabila Utomo | Portfolio</title>
+  
+  <!-- Font Google: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome untuk Ikon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- File CSS Eksternal -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<body>
+  <!-- TAMBAHKAN BARIS INI TEPAT DI SINI -->
+  <canvas id="bg-canvas"></canvas>
+  
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand">My Profile Website<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#experience">Pengalaman</a></li>
+        <li><a href="#education">Pendidikan</a></li>
+        <li><a href="#projects">Projek</a></li>
+        <li><a href="#portofolio">Portofolio</a></li> 
+        <li><a href="#contact" class="nav-btn">Hubungi</a></li>
+      </ul>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <span class="badge">Selamat Datang 👋</span>
+        <h1 class="hero-title">
+          Halo, saya <br>
+          <span class="gradient-text">Dinda Alexa Nabila Utomo</span>
+        </h1>
+        <p class="hero-nickname">Biasa dipanggil <strong>Dinda⭐</strong></p>
+        
+        <div class="role-tags">
+          <span class="tag">Mathematics Educator</span>
+          <span class="tag">Instructional Media Designer</span>
+          <span class="tag">Student & Researcher</span>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-arrow-down"></i> Lihat Projek</a>
+          <a href="#experience" class="btn btn-secondary"><i class="fa-solid fa-briefcase"></i> Rekam Jejak</a>
+        </div>
+      </div>
+
+      <div class="hero-image-wrap">
+        <div class="avatar-card">
+          <div class="avatar-circle">
+            <img src="dindaa.png" alt="Dinda Alexa Nabila Utomo" class="profile-img">
+          </div>
+          <div class="avatar-badge">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <div>
+              <p class="badge-title">Pendidikan Matematika</p>
+              <p class="badge-sub">Universitas Negeri Medan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Profil Singkat</span>
+        <h2>Tentang Saya</h2>
+      </div>
+
+      <div class="about-card">
+        <div class="about-paragraph">
+          <i class="fa-solid fa-quote-left quote-icon"></i>
+          <p>
+            Halo! Saya <strong>Dinda Alexa Nabila Utomo</strong>, mahasiswa Pendidikan Matematika di Universitas Negeri Medan dengan antusiasme tinggi pada integrasi teknologi pendidikan, pengembangan media pembelajaran interaktif, serta implementasi program berbasis masyarakat.
+          </p>
+        </div>
+        <div class="about-paragraph">
+          <p>
+            Memiliki latar belakang kepemimpinan dan kerja tim yang solid melalui keaktifan berorganisasi serta keterlibatan langsung dalam program pengabdian masyarakat (Kuliah Kerja Nyata). Pengalaman ini melatih kemampuan saya dalam manajemen program, komunikasi publik, pemecahan masalah di lapangan, serta perancangan inovasi terapan yang berdampak positif bagi komunitas.
+          </p>
+        </div>
+        <div class="about-paragraph">
+          <p>
+            Di luar kegiatan akademik dan organisasi, saya aktif menyalurkan ketertarikan pada eksplorasi desain visual/teknologi interaktif, membaca, dan menganalisis tren edukasi digital — hal yang terus mengasah kreativitas saya dalam merancang solusi pembelajaran yang menyenangkan dan efektif.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Aktivitas dan Pengalaman</span>
+        <h2>Pengalaman & Rekam Jejak</h2>
+        <p class="section-desc">Pilih kategori untuk melihat detail dan dokumentasi kegiatan.</p>
+      </div>
+
+      <!-- Experience Tab Navigation -->
+      <div class="tab-nav">
+        <button class="tab-btn active" data-tab="organisasi">
+          <i class="fa-solid fa-users-gear"></i> Organisasi
+        </button>
+        <button class="tab-btn" data-tab="kepanitiaan">
+          <i class="fa-solid fa-clipboard-check"></i> Kepanitiaan
+        </button>
+        <button class="tab-btn" data-tab="volunteer">
+          <i class="fa-solid fa-hand-holding-heart"></i> Volunteer & Pengabdian
+        </button>
+      </div>
+
+      <!-- Experience Content Panels -->
+      <div class="tab-content-area">
+        
+        <!-- Tab 1: Organisasi -->
+        <div class="tab-panel active" id="organisasi">
+          <div class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3>Pengurus Himpunan Mahasiswa Jurusan / HMJ Matematika UNIMED</h3>
+                <span class="exp-role">Divisi Advokasi, HAM, dan Kesejahteraan Mahasiswa</span>
+              </div>
+              <span class="exp-time">2024 - Sekarang</span>
+            </div>
+            <p class="exp-desc">
+              Keterlibatan dalam berbagai organisasi telah memberi saya kesempatan untuk bertemu orang baru, memikul tanggung jawab, bekerja sebagai bagian dari tim, dan belajar dari berbagai pengalaman. Aktivitas-aktivitas ini terus membentuk saya menjadi pribadi yang lebih percaya diri, bertanggung jawab, dan kolaboratif.            </p>
+            <div class="docs-section">
+              <h4><i class="fa-solid fa-camera"></i> Foto Dokumentasi Kegiatan</h4>
+              <div class="docs-grid">
+                <div class="doc-item" onclick="openLightbox(this, 'Math Art HMJ Matematika UNIMED 2026', 'assets/doc-organisasi-1.jpg')">
+                 <img src="hmj1.jpeg" alt="Math Art HMJ Matematika UNIMED 2026" class="doc-thumb">
+                </div>
+                <div class="doc-item" onclick="openLightbox(this, 'Entrepreneurship Explore', 'assets/doc-organisasi-1.jpg')">
+                 <img src="hmj2.jpeg" alt="Entrepreneurship Explore" class="doc-thumb">
+                </div>
+                <div class="doc-item" onclick="openLightbox(this, 'Gema Sosial Panti Asuhan', 'assets/doc-organisasi-1.jpg')">
+                 <img src="hmj4.jpeg" alt="Gema Sosial Panti Asuhan" class="doc-thumb">
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2: Kepanitiaan -->
+        <div class="tab-panel" id="kepanitiaan">
+          <div class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3>Kepanitiaan Selama Kuliah</h3>
+                <span class="exp-role">Organizing Comittee</span>
+              </div>
+              <span class="exp-time">2024-2026</span>
+            </div>
+            <p class="exp-desc">
+              Mengikuti beberapa kepanitiaan yang ada di kampus, serta menyusun laporan pertanggungjawaban kegiatan secara komprehensif.
+            </p>
+            <div class="docs-section">
+              <h4><i class="fa-solid fa-camera"></i> Foto Dokumentasi Kegiatan</h4>
+              <div class="docs-grid">
+                <div class="doc-item" onclick="openLightbox(this, 'PKKMB Matematika UNIMED 2024', 'assets/doc-organisasi-1.jpg')">
+                 <img src="panitiapkkmb.jpeg" alt="PKKMB Matematika UNIMED 2024" class="doc-thumb">
+                </div>
+                <div class="doc-item" onclick="openLightbox(this, 'FMIPA EXPO 2025', 'assets/doc-organisasi-1.jpg')">
+                 <img src="panitiaan.jpeg" alt="FMIPA EXPO 2025" class="doc-thumb">
+                </div>
+                <div class="doc-item" onclick="openLightbox(this, 'Matematika Fair 2026', 'assets/doc-organisasi-1.jpg')">
+                 <img src="hmj3.jpeg" alt="Matematika Fair 2026" class="doc-thumb">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3: Volunteer & KKN -->
+        <div class="tab-panel" id="volunteer">
+          <div class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3>Kuliah Kerja Nyata (KKN) & Pengabdian Masyarakat</h3>
+                <span class="exp-role">Inovator Program Edukasi & Pengabdian</span>
+              </div>
+              <span class="exp-time">2025-2026</span>
+            </div>
+            <p class="exp-desc">
+              Menginisiasi dan mengeksekusi program literasi numerasi terapan untuk anak-anak pedesaan, merancang inovasi alat bantu berbasis potensi lokal, serta membangun relasi kemitraan bersama masyarakat.
+            </p>
+            <div class="docs-section">
+              <h4><i class="fa-solid fa-camera"></i> Foto Dokumentasi Kegiatan</h4>
+              <div class="docs-grid">
+                 <div class="doc-item" onclick="openLightbox(this, 'kuliah Kerja Nyata UNIMED 2026', 'assets/doc-organisasi-1.jpg')">
+                 <img src="kkn.jpeg" alt="Kuliah Kerja Nyata UNIMED 2026" class="doc-thumb">
+                </div>
+                 <div class="doc-item" onclick="openLightbox(this, 'Pendampingan Belajar Bersama Anak-anak', 'assets/doc-organisasi-1.jpg')">
+                 <img src="kkn2.jpeg" alt="Pendampingan Belajar Bersama Anak-anak" class="doc-thumb">
+                </div>
+                <div class="doc-item" onclick="openLightbox(this, 'Gerakan Sumut Mengajar 2025', 'assets/doc-organisasi-1.jpg')">
+                 <img src="gsm.jpeg" alt="Gerakan Sumut Mengajar 2025" class="doc-thumb">
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Pendidikan</span>
+        <h2>Riwayat Pendidikan</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2023 — Sekarang</span>
+            <h3>Universitas Negeri Medan</h3>
+            <p class="timeline-subtitle">S1 Pendidikan Matematika</p>
+            <p class="timeline-text">
+              Fokus pada pedagogi matematika modern, media pembelajaran berbasis teknologi komputer, pemodelan matematika, dan metodologi pembelajaran diferensiasi.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2020 — 2023</span>
+            <h3>SMA Negeri 2 Medan</h3>
+            <p class="timeline-subtitle">Jurusan Matematika dan Ilmu Pengetahuan Alam (MIPA)</p>
+            <p class="timeline-text">
+              Aktif dalam kegiatan akademik sains, penalaran logika analitis, dan kolaborasi kepanitiaan ekstrakurikuler sekolah.
+            </p>
+          </div>
+        </div>
+
+         <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2017-2020</span>
+            <h3>SMP NEGERI 34 MEDAN</h3>
+            <p class="timeline-text">
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2011-2017</span>
+            <h3>SD SWASTA KARANG SARI</h3>
+            <p class="timeline-text">
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Karya & Eksplorasi</span>
+        <h2>Projek Unggulan</h2>
+        <p class="section-desc">Berikut beberapa karya media dan teknologi pembelajaran interaktif yang telah dirancang.</p>
+      </div>
+
+      <div class="project-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <span class="project-tag">E-Learning Platform</span>
+          </div>
+          <h3>LMS Terintegrasi Google Sites</h3>
+          <p>
+            Platform *Learning Management System* yang menggabungkan lembar kerja siswa elektronik (E-LKPD), materi interaktif, dan kuis evaluasi berbasis web yang mudah diakses siswa kapan saja.
+          </p>
+          <div class="project-tech">
+            <span>Google Sites</span>
+            <span>HTML/Embed</span>
+            <span>E-LKPD</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://sites.google.com/mhs.unimed.ac.id/lms-dindaalexa-fotosintesis/menu-utama" target="_blank" rel="noopener noreferrer" class="project-btn">
+              Buka Projek <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon"><i class="fa-solid fa-id-badge"></i></div>
+            <span class="project-tag">Web Design</span>
+          </div>
+          <h3>Carrd Profile Website</h3>
+          <p>
+            Desain website profil personal satu halaman (*one-page landing*) dengan tata letak minimalis, modern, dan optimal di seluruh ukuran layar smartphone maupun desktop.
+          </p>
+          <div class="project-tech">
+            <span>Carrd.co</span>
+            <span>UI/UX Design</span>
+            <span>Responsive Web</span>
+          </div>
+          <div class="project-footer">
+            <a href=" https://dindalexxa.carrd.co/" target="_blank" rel="noopener noreferrer" class="project-btn">
+              Buka Projek <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon"><i class="fa-solid fa-book-open-reader"></i></div>
+            <span class="project-tag">Curriculum Design</span>
+          </div>
+          <h3>Modul Ajar Matematika Interaktif</h3>
+          <p>
+            Penyusunan modul ajar matematika terstruktur dengan pendekatan kontekstual dan integrasi teknologi visual untuk memudahkan pemahaman konsep matematis yang abstrak.
+          </p>
+          <div class="project-tech">
+            <span>Kurikulum Merdeka</span>
+            <span>Pedagogi Visual</span>
+            <span>Bahan Ajar</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://drive.google.com/file/d/1Whg92sKMnuSCHFFJKKqb0GIw5esz02T5/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="project-btn">
+              Buka Projek <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Portfolio Showcase Section -->
+  <section id="portofolio" class="section">
+    <div class="container">
+      <div class="portfolio-header">
+        <h2 class="portfolio-main-title">Portfolio</h2>
+        <p class="portfolio-main-desc">
+        </p>
+
+        <!-- Tombol Filter Kategori Sesuai Pengelompokan -->
+        <div class="portfolio-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="commercial">Commercial (2)</button>
+          <button class="filter-btn" data-filter="infografis">Infografis (3)</button>
+          <button class="filter-btn" data-filter="event">Event (4)</button>
+          <button class="filter-btn" data-filter="branding">Branding (2)</button>
+        </div>
+      </div>
+
+      <!-- Portfolio Gallery Grid -->
+      <div class="portfolio-gallery">
+
+        <!-- ================= KELOMPOK COMMERCIAL (2 FOTO) ================= -->
+        <!-- Commercial 1 -->
+        <div class="gallery-item" data-category="commercial">
+          <div class="gallery-card" onclick="openLightbox(this, 'Commercial Product 1')">
+            <img src="posteresjeruk.png" alt="Commercial Product 1" class="gallery-img">
+            <div class="gallery-hover-overlay">
+              <span class="gallery-cat-tag">Commercial</span>
+              <h4>Commercial Campaign 01</h4>
+              <p>Desain visual promosi produk komersial</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Commercial 2 -->
+        <div class="gallery-item" data-category="commercial">
+          <div class="gallery-card" onclick="openLightbox(this, 'Commercial Product 2')">
+            <img src="logodeacake.png" alt="Commercial Product 2" class="gallery-img">
+            <div class="gallery-hover-overlay">
+              <span class="gallery-cat-tag">Commercial</span>
+              <h4>Commercial Campaign 02</h4>
+              <p>Materi publikasi promosi produk & digital marketing</p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- ================= KELOMPOK INFOGRAFIS (3 FOTO) ================= -->
+        <!-- Infografis 1 -->
+        <div class="gallery-item" data-category="infografis">
+          <div class="gallery-card" onclick="openLightbox(this, 'Infografis Smart Learning Ecosystem')">
+            <img src="Infografis AMLI.png" alt="Infografis Pembelajaran 1" class="gallery-img">
+            <div class="gallery-hover-overlay">
+              <span class="gallery-cat-tag">Infografis</span>
+              <h4>Infografis Learning System</h4>
+              <p>Infografis edukasi transformasi pembelajaran</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Infografis 2 -->
+        <div class="gallery-item" data-category="infografis">
+          <div class="gallery-card" onclick="openLightbox(this, 'Infografis Kesehatan')">
+            <img src="infografis1.png" alt="Infografis Kesehatan Cegah Wasting" class="gallery-img">
+            <div class="gallery-hover-overlay">
+              <span class="gallery-cat-tag">Infografis</span>
+              <h4>Infografis Kesehatan</h4>
+              <p>Menampilkan pencegahan wasting dengan pangan lokal</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Infografis 3 -->
+        <div class="gallery-item" data-category="infografis">
+          <div class="gallery-card" onclick="openLightbox(this, 'Infografis Edukasi Stop Bullying')">
+            <img src="posterbully.png" alt="Infografis Pembelajaran 3" class="gallery-img">
+            <div class="gallery-hover-overlay">
+              <span class="gallery-cat-tag">Infografis</span>
+              <h4>Infografis Edukasi Stop Bullying</h4>
+              <p>Desain visual pencegahan bullying untuk anak sekolah</p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- ================= KELOMPOK EVENT (4 FOTO) ================= -->
+        <!-- Event 1 -->
+        <div class="gallery-item" data-category="event">
+          <div class="gallery-card" onclick="openLightbox(this, 'Poster Hari Besar Nasional')">
+            <img src="jmt agug.png" alt="Event Dokumentasi 1" class="gallery-img">
+            <div class="gallery-hover-overlay">
+              <span class="gallery-cat-tag">Event</span>
+              <h4>Poster Hari Besar Nasional</h4>
+              <p>Desain visual memperingati Hari Jumat Agung</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event 2 -->
+        <div class="gallery-item" data-category="event">
+          <div class="gallery-card" onclick="openLightbox(this, 'Poster Perayaan HUT RI')">
+            <img src="Salinan dari Republik Indonesia.png" alt="Event Dokumentasi 2" class="gallery-img">
+            <div class="gallery-hover-overlay">
+              <span class="gallery-cat-tag">Event</span>
+              <h4>Poster Perayaan HUT RI</h4>
+              <p>Desain visual memperingati HUT RI</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event 3 -->
+        <div class="gallery-item" data-category="event">
+          <div class="gallery-card" onclick="openLightbox(this, 'Poster Hari Kartini')">
+            <img src="kartini day.png" alt="Event Dokumentasi 3" class="gallery-img">
+            <div class="gallery-hover-overlay">
+              <span class="gallery-cat-tag">Event</span>
+              <h4>Poster Hari Kartini</h4>
+              <p>Desain visual memperingati Hari Kartini</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event 4 -->
+        <div class="gallery-item" data-category="event">
+          <div class="gallery-card" onclick="openLightbox(this, 'Poster Perlombaan')">
+            <img src="posterpramuka.png" alt="Event Dokumentasi 4" class="gallery-img">
+            <div class="gallery-hover-overlay">
+              <span class="gallery-cat-tag">Event</span>
+              <h4>Poster Perlombaan</h4>
+              <p>Desain visual perlombaan Hari Pramuka Nasional</p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- ================= KELOMPOK BRANDING (2 FOTO) ================= -->
+        <!-- Branding 1 -->
+        <div class="gallery-item" data-category="branding">
+          <div class="gallery-card" onclick="openLightbox(this, 'Visual Identity & Branding 1')">
+            <img src="kolase.png" alt="Visual Identity 1" class="gallery-img">
+            <div class="gallery-hover-overlay">
+              <span class="gallery-cat-tag">Branding</span>
+              <h4>Visual Identity & Guidelines 01</h4>
+              <p>Perancangan identitas visual, logo, dan palet estetika</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Branding 2 -->
+        <div class="gallery-item" data-category="branding">
+          <div class="gallery-card" onclick="openLightbox(this, 'Visual Identity & Branding 2')">
+            <img src="storyboard.png" alt="Visual Identity 2" class="gallery-img">
+            <div class="gallery-hover-overlay">
+              <span class="gallery-cat-tag">Branding</span>
+              <h4>Visual Identity & Guidelines 02</h4>
+              <p>Desain atribut identitas grafis organisasi & proyek</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact-box">
+        <span class="section-tag">Mari Terhubung</span>
+        <h2>Hubungi Saya</h2>
+        <p class="contact-desc">
+          Terbuka untuk kolaborasi riset, perancangan media edukasi interaktif, atau proyek teknologi terapan.
+        </p>
+
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <p class="c-label">Email Pribadi</p>
+              <a href="mailto:alexadinda56@gmail.com" class="c-link">alexadinda56@gmail.com</a>
+            </div>
+            <button class="copy-btn" id="copyEmailBtn" title="Salin Email">
+              <i class="fa-solid fa-copy"></i>
+            </button>
+          </div>
+
+          <div class="contact-item">
+            <div class="c-icon"><i class="fa-brands fa-instagram"></i></div>
+            <div>
+              <p class="c-label">Instagram</p>
+              <a href="https://instagram.com/dindalexaa" target="_blank" rel="noopener noreferrer" class="c-link">@dindalexaa</a>
+            </div>
+            <a href="https://instagram.com/dindalexaa" target="_blank" rel="noopener noreferrer" class="social-arrow">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Dinda Alexa Nabila Utomo. Dibuat dengan dedikasi untuk edukasi & teknologi.</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal untuk Dokumentasi Foto -->
+  <div class="lightbox" id="lightboxModal" onclick="closeLightbox(event)">
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+      <div class="lightbox-view">
+        <i class="fa-solid fa-image lightbox-placeholder-icon"></i>
+      </div>
+      <h3 id="lightboxTitle">Judul Dokumentasi</h3>
+      <p id="lightboxSubtitle">Dokumentasi portofolio aktivitas kegiatan mahasiswa</p>
+    </div>
+  </div>
+
+  <!-- File JavaScript Eksternal -->
+  <script src="script.js"></script>
+</body>
+</html>
